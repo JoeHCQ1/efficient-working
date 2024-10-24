@@ -35,3 +35,12 @@ These are meant to be questions to ask yourself to catch common errors, of which
 | Do you understand what the component is trying to do? | |
 | Is there any chance a secret got rotated such that Bob and Alice are operating from different truths? | Example, Nexus deploy started failing when the metrics server job tried to register because I'd deleted the namespace before a redeploy, but the external postgres preserved the original admin API key. |
 | Have you googled the error? | So basic, but so important. Who knew the docker engine could fail to start because Docker Desktop added a plural where a word should be singular and borked the config.json? (2020 Stack Overflow post, experienced in 2024). |
+
+## Reporting Team Conflict
+
+Conflict arises. One way that has worked well to evaluate and report the severity of the interpersonal problem is to speak in terms of service degredation.
+
+Examples:
+- There's a sore point around x and y, but otherwise, interactions are fine. He still responds to my PRs, there's no tension on other topics. I.e. the API is up, but there are a couple endpoints that are down or sluggish.
+- We consistently interact but there's a level of guardedness or tension in all the interactions. I.e. the entire service is in a degraded state.
+- Trust is broke to the point all communications are written and emailed, and emotionally fraught from both sides. I.e. x509 errors on every comm attempt
